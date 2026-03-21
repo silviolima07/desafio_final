@@ -14,7 +14,7 @@ html_page_title = """
                """               
 st.markdown(html_page_title, unsafe_allow_html=True)
 
-st.warning("Trabalho acadêmico de avaliação de Aprendizado de Máquina.")
+st.info("Este conteúdo é destinado apenas a fins educacionais. Os dados exibidos são ilustrativos e podem não corresponder a situações reais.")
 
 # Carregar o modelo (com cache para não recarregar toda vez)
 @st.cache_resource
