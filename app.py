@@ -21,7 +21,7 @@ def load_model(model_path):
     return joblib.load(model_path)
 
 try:
-    model = load_model('lgbm_best_model_pipeline.pkl')
+    model = load_model('modelo/lgbm_best_model_pipeline.pkl')
 except Exception as e:
     st.error(f"Erro ao carregar o modelo: {e}")
     st.stop()
