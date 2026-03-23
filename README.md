@@ -1,2 +1,32 @@
-# desafio_final
-Desafio final da pós graduação Unisenai.
+# Projeto de Previsão de Preços de Carro
+
+Este projeto visa prever o preço de carros com base em diversas características. A previsão é realizada usando técnicas de aprendizado de máquina, onde construímos um modelo preditivo treinado em um conjunto de dados relevante.
+
+## Características do Projeto
+- **Modelo:** Utiliza algoritmos de aprendizado de máquina como regressão linear, árvore de decisão, entre outros.
+- **Dados:** Dados que incluem características dos carros como ano, modelo, quilometragem, e muito mais.
+- **Resultados:** O modelo fornece previsões de preços com métricas de desempenho como MAE, RMSE.
+
+## Como Executar o Projeto
+1. Clone o repositório:
+```bash
+git clone https://github.com/silviolima07/desafio_final.git
+```
+2. Navegue até o diretório do projeto:
+```bash
+cd desafio_final
+```
+3. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+4. Execute o script de previsão:
+```bash
+python predict_price.py
+```
+
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou relatar problemas.
+
+## Licença
+Este projeto está sob a licença MIT.
