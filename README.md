@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="imgs/chave_carro.png" width="300">
+  <img src="https://github.com/user-attachments/assets/4e7db2a8-faa6-4c08-bfd4-0ec3a00f1770" width="500">
 </p>
 
 # Projeto Acadêmico de Previsão de Preços de Carro
