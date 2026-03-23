@@ -1,3 +1,5 @@
+<img src="imgs/chave_carro.png" width="400">
+
 # Projeto de Previsão de Preços de Carro
 
 Este projeto visa prever o preço de carros com base em diversas características. A previsão é realizada usando técnicas de aprendizado de máquina, onde construímos um modelo preditivo treinado em um conjunto de dados relevante.
