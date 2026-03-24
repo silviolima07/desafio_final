@@ -32,7 +32,7 @@ st.markdown(html_page_cloud, unsafe_allow_html=True)
 
 html_page_title = """
      <div style="background-color:black;padding=60px">
-         <p style='text-align:center;font-size:50px;font-weight:bold'>Desafio Final - Previsão de Valor de Venda de Carros</p>
+         <p style='text-align:center;font-size:50px;font-weight:bold'>Previsão de Valor de Venda de Carros</p>
      </div>
                """               
 st.markdown(html_page_title, unsafe_allow_html=True)
