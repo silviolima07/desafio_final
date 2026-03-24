@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4e7db2a8-faa6-4c08-bfd4-0ec3a00f1770" width="500">
+  <img src="imgs/app_docker.png" width="500" height="450">
+  <img src="imgs/app_streamlit.png" width="500" height="450">
 </p>
 
 # Projeto Acadêmico de Previsão de Preços de Carro
