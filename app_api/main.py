@@ -6,19 +6,19 @@ from pydantic import BaseModel
 
 class Carro(BaseModel):
     Marca: str
-    Modelo: str
+    #Modelo: str
     Ano: int
     Quilometragem: int
-    Cor: str
-    Cambio: str
-    Combustivel: str
-    Portas: int
-    idade_carro: int
+    #Cor: str
+    #Cambio: str
+    #Combustivel: str
+    #Portas: int
+    #idade_carro: int
 
 app = FastAPI()
 
 # Carregar modelo
-model = joblib.load('lgbm_best_full_model_pipeline.pkl')
+model = joblib.load('lasso_best_full_model_pipeline.pkl')
 
 @app.get("/")
 def home():

@@ -8,7 +8,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 
 
 # Configuração da página
-st.set_page_config(page_title="Desafio Final Previsão de Preço de Carros", page_icon="🚗", layout="centered")
+st.set_page_config(page_title="Docker - Desafio Final Previsão de Preço de Carros", page_icon="🚗", layout="centered")
 #st.markdown('## Docker')
 
 html_page_docker = """
@@ -20,7 +20,7 @@ st.markdown(html_page_docker, unsafe_allow_html=True)
 
 html_page_title = """
      <div style="background-color:black;padding=60px">
-         <p style='text-align:center;font-size:50px;font-weight:bold'>Desafio Final - Previsão de Valor de Venda de Carros</p>
+         <p style='text-align:center;font-size:40px;font-weight:bold'>Previsão de Valor de Venda de Carros</p>
      </div>
                """
 st.markdown(html_page_title, unsafe_allow_html=True)
@@ -79,39 +79,68 @@ def exibir_recomendacoes(valor_estimado):
 with st.form("form_previsao"):
     st.subheader("Dados do Veículo")
     
-    col1, col2 = st.columns(2)
+    #col1, col2 = st.columns(2)
+    
+    #with col1:
+    #    marca = st.selectbox("Marca", options=['Nissan', 'Ford', 'Toyota', 'Renault', 'Fiat', 'Jeep', 'Honda', 'Volkswagen', 'Hyundai', 'Chevrolet'])
+    #    modelo = st.selectbox("Modelo", options=['Frontier', 'Ranger', 'Hilux', 'Sandero', 'Duster', 'Kicks', 'Ka', 'Corolla', 'Mobi', 'Renegade', 'Compass', 'HR-V', 'T-Cross', 'Toro', 'HB20S', 'Yaris', 'EcoSport', 'Onix', 'Polo', 'Argo', 'Kwid', 'Virtus', 'Civic', 'Cronos', 'Gol', 'Versa', 'Creta', 'HB20', 'S10', 'Tracker', 'Onix Plus', 'Fit'])
+    #    ano = st.number_input("Ano de Fabricação", min_value=1950, max_value=2026, value=2018, step=1)
+    #    quilometragem = st.number_input("Quilometragem (km)", min_value=0, max_value=1000000, value=50000, step=1000)
+    
+    #with col2:
+    #    cor = st.selectbox("Cor", options=['Cinza', 'Preto', 'Branco', 'Azul', 'Prata', 'Vermelho'])
+    #    cambio = st.selectbox("Câmbio", options=['Manual', 'Automático'])
+    #    combustivel = st.selectbox("Combustível", options=['Gasolina', 'Flex', 'Diesel'])
+    #    portas = st.number_input("Número de Portas", min_value=2, max_value=5, value=4, step=1)
+        
+    col1, col2, col3 = st.columns(3)
     
     with col1:
         marca = st.selectbox("Marca", options=['Nissan', 'Ford', 'Toyota', 'Renault', 'Fiat', 'Jeep', 'Honda', 'Volkswagen', 'Hyundai', 'Chevrolet'])
-        modelo = st.selectbox("Modelo", options=['Frontier', 'Ranger', 'Hilux', 'Sandero', 'Duster', 'Kicks', 'Ka', 'Corolla', 'Mobi', 'Renegade', 'Compass', 'HR-V', 'T-Cross', 'Toro', 'HB20S', 'Yaris', 'EcoSport', 'Onix', 'Polo', 'Argo', 'Kwid', 'Virtus', 'Civic', 'Cronos', 'Gol', 'Versa', 'Creta', 'HB20', 'S10', 'Tracker', 'Onix Plus', 'Fit'])
-        ano = st.number_input("Ano de Fabricação", min_value=1950, max_value=2026, value=2018, step=1)
-        quilometragem = st.number_input("Quilometragem (km)", min_value=0, max_value=1000000, value=50000, step=1000)
+        #modelo = st.selectbox("Modelo", options=['Frontier', 'Ranger', 'Hilux', 'Sandero', 'Duster', 'Kicks', 'Ka', 'Corolla', 'Mobi', 'Renegade', 'Compass', 'HR-V', 'T-Cross', 'Toro', 'HB20S', 'Yaris', 'EcoSport', 'Onix', 'Polo', 'Argo', 'Kwid', 'Virtus', 'Civic', 'Cronos', 'Gol', 'Versa', 'Creta', 'HB20', 'S10', 'Tracker', 'Onix Plus', 'Fit'])
+        #ano = st.number_input("Ano de Fabricação", min_value=1950, max_value=2026, value=2018, step=1)
+        #quilometragem = st.number_input("Quilometragem (km)", min_value=0, max_value=1000000, value=50000, step=1000)
     
     with col2:
-        cor = st.selectbox("Cor", options=['Cinza', 'Preto', 'Branco', 'Azul', 'Prata', 'Vermelho'])
-        cambio = st.selectbox("Câmbio", options=['Manual', 'Automático'])
-        combustivel = st.selectbox("Combustível", options=['Gasolina', 'Flex', 'Diesel'])
-        portas = st.number_input("Número de Portas", min_value=2, max_value=5, value=4, step=1)
+        quilometragem = st.number_input("Quilometragem (km)", min_value=0, max_value=1000000, value=50000, step=1000)
+        #cor = st.selectbox("Cor", options=['Cinza', 'Preto', 'Branco', 'Azul', 'Prata', 'Vermelho'])
+        #cambio = st.selectbox("Câmbio", options=['Manual', 'Automático'])
+        #combustivel = st.selectbox("Combustível", options=['Gasolina', 'Flex', 'Diesel'])
+        #portas = st.number_input("Número de Portas", min_value=2, max_value=5, value=4, step=1)
+        
+    with col3:
+        ano = st.number_input("Ano de Fabricação", min_value=1950, max_value=2026, value=2018, step=1)
+        #cor = st.selectbox("Cor", options=['Cinza', 'Preto', 'Branco', 'Azul', 'Prata', 'Vermelho'])
+        #cambio = st.selectbox("Câmbio", options=['Manual', 'Automático'])
+        #combustivel = st.selectbox("Combustível", options=['Gasolina', 'Flex', 'Diesel'])
+        #portas = st.number_input("Número de Portas", min_value=2, max_value=5, value=4, step=1)     
 
-    st.error("Dados fictícios")
+    
     submit_button = st.form_submit_button(label="🔍 Prever Valor de Venda")
+    
+    html_page_aviso = """
+     <div style="background-color:black;padding=60px">
+         <p style='text-align:center;font-size:20px;font-weight:bold'>Dados Ficticios</p>
+     </div>
+               """               
+    st.markdown(html_page_aviso, unsafe_allow_html=True)
 
 if submit_button:
-    if marca and modelo and cor:
+    if marca and quilometragem and ano:
         # 1. Calcular a nova feature
-        idade_carro = 2026 - ano
+        #idade_carro = 2026 - ano
         
         # 2. Criar DataFrame com as entradas
         dados_entrada = {
             'Marca': [marca],
-            'Modelo': [modelo],
+       #    'Modelo': [modelo],
             'Ano': [ano],
             'Quilometragem': [quilometragem],
-            'Cor': [cor],
-            'Cambio': [cambio],
-            'Combustivel': [combustivel],
-            'Portas': [portas],
-            'idade_carro': [idade_carro]
+        #    'Cor': [cor],
+        #    'Cambio': [cambio],
+        #    'Combustivel': [combustivel],
+        #    'Portas': [portas],
+        #    'idade_carro': [idade_carro]
         }
         
         # Criar DataFrame com as entradas
