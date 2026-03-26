@@ -17,7 +17,9 @@ A previsão é realizada usando técnicas de aprendizado de máquina, onde foi c
 
 ### Análise Exploratória
 
-A primeira etapa desse projeto foi a análise exploratória dos dados, onde identificou a existência de dados ausentes, dados com valores extremos (outliers) e dados indevidos com a coluna onde foi encontrado. Nessa análise foram identificados padrões de valores de venda em função das colunas de dados existentes.
+A primeira etapa desse projeto foi a análise exploratória dos dados, onde identificou a existência de dados ausentes, dados com valores extremos (outliers) e dados indevidos com a coluna onde foi encontrado. 
+
+Nessa análise foram identificados padrões de valores de venda em função das colunas de dados existentes.
 
 ### Modelagem
 
@@ -55,7 +57,7 @@ Acesso: [🔗 Desafio Final Previsao de Valor de Carro](https://desafiofinal.str
 
 A mesma aplicação pode ser executada localmente na linha do terminal através do streamlit ou através do docker que foi implementado. 
 
-Apenas uma valor de venda previsto é retornado, pois foi usado apenas o melhor modelo identificado na etapa de treinamento e avaliação, o modelo Lasso.
+Apenas um valor de venda previsto é retornado, pois foi usado apenas o melhor modelo identificado na etapa de treinamento e avaliação, o modelo Lasso.
 
 A analise do especialista só esta presente na aplicação do Streamlit / Cloud.
 
