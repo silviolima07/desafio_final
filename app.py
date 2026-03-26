@@ -158,7 +158,7 @@ with st.form("form_previsao"):
         #portas = st.number_input("Número de Portas", min_value=2, max_value=5, value=4, step=1)
         
     with col3:
-        ano = st.number_input("Ano de Fabricação", min_value=1950, max_value=2026, value=2018, step=1)
+        ano = st.number_input("Ano de Fabricação", min_value=2000, max_value=2026, value=2018, step=1)
         #cor = st.selectbox("Cor", options=['Cinza', 'Preto', 'Branco', 'Azul', 'Prata', 'Vermelho'])
         #cambio = st.selectbox("Câmbio", options=['Manual', 'Automático'])
         #combustivel = st.selectbox("Combustível", options=['Gasolina', 'Flex', 'Diesel'])
