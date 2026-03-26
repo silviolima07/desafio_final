@@ -4,7 +4,9 @@
 
 # Projeto Acadêmico de Previsão de Preços de Carro
 
-Este projeto visa prever o preço de carros com base em diversas características. A previsão é realizada usando técnicas de aprendizado de máquina, onde foi construido um modelo preditivo treinado em um conjunto de dados relevante.
+Este projeto visa prever o preço de carros com base em diversas características. 
+
+A previsão é realizada usando técnicas de aprendizado de máquina, onde foi construido um modelo preditivo treinado em um conjunto de dados relevante.
 
 ## Características do Projeto
 - **Modelo:** Utiliza algoritmos de aprendizado de máquina como regressão linear, árvore de decisão, entre outros.
@@ -20,19 +22,29 @@ A primeira etapa desse projeto foi a análise exploratória dos dados, onde iden
 ### Modelagem
 
 Ao final da etapa de análise,  o dataset gerado foi salvo e se iniciou a etapa de modelagem.
+
 Nessa etapa os dados foram tratados para o modelo possa realizar o treinamento e a avaliação seja feita.
+
 Foram treinados e avaliados 7 modelos de reggressão.
+
 Foram geradas 4 métricas e mais duas colunas com informações geradas durante o treinamento.
+
 Um dataset com todos treinamentos, métricas e dados gerados é apresentado no final.
+
 O GridSearch foi aplicado ao melhor modelo para identificar os melhores hiperparametros.
 
 #### Deploy
 
 Foi implementada uma aplicação web com a lib Streamlit.
+
 O usuário seleciona as 3 caracteristicas do veiculo e envia o dados para os modelos treinados.
+
 As previsões são apresentadas numa tabela, identificando qual modelo fez a previsão.
+
 São apresentadas 4 recomendações de veiculos na mesma faixa de valor dos carros.
+
 Um agente especialista pode analisar as recomendações e indicar a melhor opção.
+
 A análise gerada pode ser baixada para ser analisada posteriormente.
 
 A aplicação esta hospedada no site streamlit.io.
@@ -42,8 +54,11 @@ Acesso: [🔗 Desafio Final Previsao de Valor de Carro](https://desafiofinal.str
 #### Docker
 
 A mesma aplicação pode ser executada localmente na linha do terminal através do streamlit ou através do docker que foi implementado. 
+
 Apenas uma valor de venda previsto é retornado, pois foi usado apenas o melhor modelo identificado na etapa de treinamento e avaliação, o modelo Lasso.
+
 A analise do especialista só esta presente na aplicação do Streamlit / Cloud.
+
 Para sua execução é preciso ter o Docker Desktop instalado no seu ambiente.
 
 Esta implementação fez  uso da lib FastAPI, onde um servidor espera requisitos POST na porta 8000 e devolve os valores previstos para os dados obtidos numa interface web do Streamlit.
