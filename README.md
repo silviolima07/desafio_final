@@ -53,7 +53,7 @@ A aplicação esta hospedada no site streamlit.io.
 
 Acesso: [🔗 Desafio Final Previsao de Valor de Carro](https://desafiofinal.streamlit.app/)
 
-#### Docker
+#### Streamlit / FastAPI / Docker
 
 A mesma aplicação pode ser executada localmente na linha do terminal através do streamlit ou através do docker que foi implementado. 
 
